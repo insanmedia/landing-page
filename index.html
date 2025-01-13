@@ -37,7 +37,6 @@
     // Function to track event
     function trackEvent(eventName) {
       fbq('track', eventName);
-      alert(eventName + ' event triggered!');
     }
   </script>
 </head>
@@ -1482,7 +1481,7 @@
               class="text-dark">Cemilan</span></h2>
           <p class="font-medium text-slate-400 mb-10 leading-relaxed">Ayo menjadi bagian dari kami, raih kesuksesan dan
             keberkahan bersama</p>
-          <a href="#" onclick="fbq('track', 'Contact')"
+          <a href="#" onclick="trackEvent('Contact'); return false;" 
             class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
             Hubungi Kami
           </a>
