@@ -33,12 +33,6 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1264559168167968&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
-  <script>
-    // Function to track event
-    function trackEvent(eventName) {
-      fbq('track', eventName);
-    }
-  </script>
 </head>
 
 <body>
@@ -1449,13 +1443,13 @@
           rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
             <ul class="block lg:flex">
               <li class="group">
-                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="trackEvent('ViewContent'); return false;">Beranda</a>
+                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="fbq('track', 'ViewContent')">Beranda</a>
               </li>
               <li class="group">
-                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="trackEvent('ViewContent'); return false;">Tentang Kami</a>
+                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="fbq('track', 'ViewContent')">Tentang Kami</a>
               </li>
               <li class="group">
-                <a href="#product" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="trackEvent('ViewContent'); return false;">Produk</a>
+                <a href="#product" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" onclick="fbq('track', 'ViewContent')">Produk</a>
               </li>
               <!-- <li class="group">
                 <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
@@ -1481,7 +1475,7 @@
               class="text-dark">Cemilan</span></h2>
           <p class="font-medium text-slate-400 mb-10 leading-relaxed">Ayo menjadi bagian dari kami, raih kesuksesan dan
             keberkahan bersama</p>
-          <a href="#" onclick="trackEvent('Contact'); return false;" 
+          <a href="#" onclick="fbq('track', 'Contact')"
             class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
             Hubungi Kami
           </a>
